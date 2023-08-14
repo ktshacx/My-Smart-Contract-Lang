@@ -1,16 +1,3 @@
-const inputCode = `a = 3;
-b = 7;
-c = 8;
-sum = a + c;
-mul = a * c;
-sub = a - b;
-div = b / c;
-log sum;
-log mul;
-log sub;
-log div;
-`;
-
 const tokenMap = {
     '=': 'EQ',
     '+': 'ADD',
@@ -20,16 +7,6 @@ const tokenMap = {
     'log': 'LOG',
     ';': 'NEXT'
 };
-
-const tokenList = [
-    "EQ",
-    "ADD",
-    'SUB',
-    'MUL',
-    'DIV',
-    'LOG',
-    'NEXT'
-];
 
 function tokenize(inputCode) {
     const extracted = inputCode.split(/\s/).filter(line => line.trim().length > 0);
@@ -99,6 +76,21 @@ function execute(tokenizedCode) {
 
     return result;
 }
+
+// Testing the code
+
+const inputCode = `a = 3;
+b = 7;
+c = 8;
+sum = a + c;
+mul = a * c;
+sub = a - b;
+div = b / c;
+log sum;
+log mul;
+log sub;
+log div;
+`;
 
 const tokenizedCode = tokenize(inputCode);
 console.log('Tokenized Code:', tokenizedCode);
