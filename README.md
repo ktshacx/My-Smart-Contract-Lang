@@ -41,5 +41,3 @@ This code example is simplistic and lacks advanced features such as error handli
 
 ## Conclusion
 The provided code demonstrates a basic custom language compiler and executor, showcasing the process of tokenization, variable assignments, arithmetic operations, and result logging. It serves as a starting point for building more robust custom language interpreters or compilers.
-
-Please note that this documentation is a high-level overview of the code's functionality. Depending on your project's requirements, you can enhance and customize the code further.
